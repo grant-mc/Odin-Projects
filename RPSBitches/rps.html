@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+	<script type="text/javascript">
+		var wins = 0;
+		var losses = 0;
+		var ties = 0;
+		game();
+
+		function game(){
+			
+			for (i = 1; i < 6; i++){
+				const playerSelection = prompt("What is your throw?").toUpperCase();
+				const computerSelection = computerPlay();
+				console.log("ROUND #" + i);
+				console.log("The player chooses: " + playerSelection);
+				console.log("The computer chooses: " + computerSelection);
+				console.log("Result: " + playRound(playerSelection, computerSelection));
+				console.log("");
+			}
+
+			console.log("THE PLAYERS FINAL RECORD");
+			console.log("Wins: " + wins + "    Losses: " + losses + "    Ties: " + ties);
+			console.log(score());
+			
+		}
+
+		function score(){
+			
+			if (wins > losses){
+				return "The player wins!!!!";
+			} else if (losses > wins){
+				return "The player loses!!!!";
+			} else {
+				return "It's a tie!!!!";
+			}
+		}
+		
+
+		function computerPlay(){
+			var plays = ["ROCK", "PAPER", "SCISSORS"];
+			var randNum = Math.floor(Math.random() * 3);
+			return plays[randNum];
+		}
+
+		function playRound(playerSelection, computerSelection){
+
+			if (playerSelection == computerSelection){
+				ties = ties + 1;
+				return "It's a tie";
+			}
+			
+			if(playerSelection == "ROCK" && computerSelection == "SCISSORS"){
+				wins = wins + 1;
+				return "The player wins!";
+			}else if(playerSelection == "PAPER" && computerSelection == "ROCK") {
+				wins = wins + 1;
+				return "The player wins!";
+			} else if (playerSelection == "SCISSORS" && computerSelection == "PAPER") {
+				wins = wins + 1;
+				return "The player wins!";
+			}
+
+			losses = losses + 1;
+			return "The player loses!";
+
+
+		}
+
+	</script>
+</body>

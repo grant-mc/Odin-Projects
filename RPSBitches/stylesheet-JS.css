@@ -1,0 +1,74 @@
+.buttons{
+	position: absolute;
+	top: 575px;
+	left: 800px;
+}
+.button{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 25px;
+}
+
+.scoreboard{
+	background: pink;
+	border-style: 10px solid;
+	height: 250px;
+	width: 690px;
+	position: absolute;
+	top: 240px;
+	left: 610px;
+}
+
+.titles{
+	display: inline-block;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-right: 40px;
+}
+
+.lable{
+	position: absolute;
+	top: 490px;
+	left:870px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.pChoice{
+	background: #90f9f4;
+	border-style: 10px solid;
+	height: 200px;
+	width: 300px;
+	position: absolute;
+	top: 40px;
+	left: 610px;
+}
+
+.cChoice{
+	background: #8fefca;
+	border-style: 10px solid;
+	height: 200px;
+	width: 300px;
+	position: absolute;
+	top: 40px;
+	left: 1000px;
+}
+
+.choiceLabel{
+	font-size: 23px;
+	font-weight: bold;
+	margin-left: 40px;
+}
+
+.choiceDisplay{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-left: 115px;
+}
+
+.num{
+	padding-left: 50px;
+	padding-right: 20px;
+}

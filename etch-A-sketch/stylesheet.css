@@ -1,0 +1,30 @@
+body{
+	background: #d81e2d;
+}
+
+.grid {
+	background-color: white;
+	height: 600px;
+	width: 800px;
+	border: black solid 10px;
+	position: absolute;
+	left: 400px;
+	top: 100px;
+	display: grid;
+	grid-template: repeat(32, 1fr) / repeat(32, 1fr);
+}
+
+.box {
+	border: dodgerblue solid 1px;
+}
+
+.buttons {
+	position: absolute;
+	top: 30px;
+	left: 775px;
+}
+
+button {
+	font-size: 25px;
+	font-weight: bold;
+}
