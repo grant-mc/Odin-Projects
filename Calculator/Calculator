@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style></style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<section class="paper">
+
+ <article class="head"></article>
+
+  <p>&nbsp;</p>
+  <h1 class="title"
+
+   <article contenteditable="true">
+   		<div class="container">
+		<!--Calculator display-->
+			<div class="display"></div>
+
+			<!--First Row-->
+			<button class="back first"> BACK </button>
+			<button class="clear first"> CLEAR</button>
+
+			<!--Second Row-->
+			<button class="numbers">7</button>
+			<button class="numbers">8</button>
+			<button class="numbers">9</button>
+			<button class="divide ops">/</button>
+
+			<!-- Third Row -->
+			<button class="numbers">4</button>
+			<button class="numbers">5</button>
+			<button class="numbers">6</button>
+			<button class="multiply ops">*</button>
+
+			<!-- Fourth Row -->
+			<button class="numbers">1</button>
+			<button class="numbers">2</button>
+			<button class="numbers">3</button>
+			<button class="subtract ops">-</button>
+
+			<!-- Fifth Row -->
+			<button class="numbers">0</button>
+			<button class="decimal"> . </button>
+			<button class="equals">=</button>
+			<button class="add ops">+</button>
+	</div>
+
+   </article>
+
+</section>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
